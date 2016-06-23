@@ -18,7 +18,6 @@ $objForm.KeyPreview = $True
 
 
 
-
 $UPNLabel = New-Object System.Windows.Forms.Label
 $UPNLabel.Location = New-Object System.Drawing.Size (25,25)
 $UPNLabel.Size = New-Object System.Drawing.Size (125,15)
