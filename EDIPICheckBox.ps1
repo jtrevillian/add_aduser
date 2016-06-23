@@ -34,11 +34,8 @@ $objForm.Controls.Add($objUPNTextBox)
 
 
 $CheckEDIButton = New-Object System.Windows.Forms.Button
-
 $CheckEDIButton.Size = New-Object System.Drawing.Size (75,30)
-
 $CheckEDIButton.Location = New-Object System.Drawing.Size (100,85)
-
 $CheckEDIButton.Text = "Check EDI"
 
 $objForm.Controls.Add($CheckEDIButton)
