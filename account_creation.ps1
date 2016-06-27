@@ -238,7 +238,7 @@ $expireDateDefault = $objExpire.SelectionStart
 $expireDate = $expireDateDefault.ToShortDateString()
 $securepw = $objPasswordTextBox.Text | ConvertTo-SecureString -AsPlainText -Force
 
-New-ADUser -SamAccountName $script:legacy -GivenName $userfirst -Surname $userlast -Initials $usermiddle -Name $name -DisplayName $displayname -Description $displayname -Path 'OU=Users,OU=3USAMCP,OU=Organizations,OU=SAFB,OU=-USA,DC=swa,DC=ds,DC=army,DC=mil' -SmartcardLogonRequired $true -AccountPassword $securepw -UserPrincipalName  $principalName -Enabled $true -EmailAddress $email -AccountExpirationDate $expireDate -HomeDrive "H:" -HomeDirectory "\\3usaa7swan100\users\$legacy" -PasswordNeverExpires $true -Office $office -OfficePhone $phoneNumber
+New-ADUser -SamAccountName $script:legacy -GivenName $userfirst -Surname $userlast -Initials $usermiddle -Name $name -DisplayName $displayname -Description $displayname -Path 'PATH' -SmartcardLogonRequired $true -AccountPassword $securepw -UserPrincipalName  $principalName -Enabled $true -EmailAddress $email -AccountExpirationDate $expireDate -HomeDrive "H:" -HomeDirectory "\\3usaa7swan100\users\$legacy" -PasswordNeverExpires $true -Office $office -OfficePhone $phoneNumber
 
 NewUsersHDrive
 
