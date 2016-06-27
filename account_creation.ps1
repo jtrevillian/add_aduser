@@ -22,7 +22,7 @@ Function NewUsersHDrive {
     #$UPN = '1234567890@mil'
     #$HomeDrive=’Z:’
 
-$UserRoot= '\\3usaa7swan100\users\'
+$UserRoot= '\\ServerName\users\'
 $HomeDirectory=$UserRoot+$script:legacy
 
 # SET-ADUSER $AccountName –HomeDrive $HomeDrive –HomeDirectory $HomeDirectory 
@@ -30,7 +30,7 @@ $HomeDirectory=$UserRoot+$script:legacy
 # Create the folder on the root of the common Users Share
 
 NEW-ITEM –path $HomeDirectory -type directory 
-$Domain=’swa.ds.army.mil’
+$Domain=’Domain’
 $IdentityReference=$Domain+’\’+$script:legacy
 
 # Set parameters for Access rule
